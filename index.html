@@ -8,62 +8,26 @@
 <body>
     <h1>Systém na vyhledání a objednání se k psychologovi</h1>
     <h2>Perex</h2>
-    <p>Psychologické poradny a psychologové na volné noze se budou moci přihlásit do tohoto systému a spravovat si v něm stránku o sobě. <br>
-        Uživatel si tak bude moci vybírat ze všech možností terapeutů v České republice. <br>
-        Pokud si uživatel někoho vybere, může se i přes stránku k danému psychologovi objednat, jen vyplní formulář se svými kontaktními údaji a problémem, ten pak příjde psychologovi na druhé straně. <br>
-        Systém uživateli řekne také dostupnost psychologů - jak dlouhá je čekací doba, v jaké dny a časy pracují. <br>
-        Systém by měl sloužit k zjednodušení hledání psychologa v České republice a sjednotit všechny psychology na jedno přehledné místo.</p>
 
-    <img src="./diagrams/simpleDiagram.svg" alt="diagram">
+    <ul>
+        <li>Psychologické poradny a psychologové na volné noze se budou moci přihlásit do tohoto systému a spravovat si v něm stránku o sobě.</li>
+        <li>Pokud si uživatel někoho vybere, může se i přes stránku k danému psychologovi objednat, jen vyplní formulář se svými kontaktními údaji a problémem, ten pak příjde psychologovi na druhé straně.</li>
+        <li>Systém uživateli řekne také dostupnost psychologů - jak dlouhá je čekací doba, v jaké dny a časy pracují.</li>
+        <li>Systém by měl sloužit k zjednodušení hledání psychologa v České republice a sjednotit všechny psychology na jedno přehledné místo.</li>
+    </ul>
 
-        <h2>Katalog požadavků</h2>
 
-        <h3>Funkční požadavky</h3>
-        <ul>
-            <li>FR-01 - Registrace psychologů a poraden</li>
-            <li>FR-02 - Správa profilu psychologa/poradny</li>
-            <li>FR-03 - Správa dostupnosti psychologa</li>
-            <li>FR-04 - Vyhledávání psychologů podle:
-                <ul>
-                    <li>Kraje</li>
-                    <li>Města</li>
-                    <li>Ceny</li>
-                    <li>Zaměření</li>
-                </ul>
-            </li>
-            <li>FR-05 - Objednání se</li>
-            <li>FR-06 - Schvalování registrace psychologů/poraden</li>
-        </ul>
-        <h3>Nefunkční požadavky</h3>
-        <ul>
-            <li>NFR-01 - Dostupnost - Systém musí být dostupný 24 hodin denně</li>
-            <li>NFR-02 - Výkon - Výsledky vyhledávání musí být zobrazeny do 3 sekund</li>
-            <li>NFR-03 - Bezpečnost - Komunikace musí probíhat prostřednictvím HTTPS</li>
-            <li>NFR-04 - Ochrana osobních údajů - Systém musí splňovat požadavky GDPR</li>
-            <li>NFR-05 - Zálohování - Databáze musí být pravidelně zálohována</li>
-            <li>NFR-06 - Responzivita - Systém musí být použitelný na počítači, tabletu i mobilním telefonu</li>
-            <li>NFR-07 - Použitelnost - Uživatel musí být schopen najít a kontaktovat psychologa bez nutnosti registrace</li>
-        </ul>
-        <h3>Uživatelské požadavky</h3>
-        <ul>
-            <li>UR-01 - Jako návštěvník chci vyhledat psychologa podle místa bydliště</li>
-            <li>UR-02 - Jako návštěvník chci zjistit dostupnost psychologa.</li>
-            <li>UR-03 - Jako návštěvník chci kontaktovat psychologa pomocí formuláře</li>
-            <li>UR-04 - Jako psycholog chci upravovat svůj profil</li>
-            <li>UR-05 - Jako psycholog chci dostávat nové poptávky od klientů</li>
-        </ul>
-        <h3>Systémové požadavky</h3>
-        <ul>
-            <li>SR-01 - Systém bude fungovat jako webová aplikace</li>
-            <li>SR-02 - Data budou ukládána do relační databáze</li>
-            <li>SR-03 - Systém bude podporovat moderní webové prohlížeče</li>
-            <li>SR-04 - Systém bude zasílat notifikace e-mailem</li>
-        </ul>
-        <h3>Omezení</h3>
-        <ul>
-            <li>C-01 - bude určen pouze pro psychology působící v České republice</li>
-            <li>C-02 - Psychologové musí mít možnost doložit svou odbornou kvalifikaci</li>
-            <li>C-03 - Systém nenahrazuje krizovou psychologickou pomoc ani zdravotnický informační systém</li>
-        </ul>
+    <h3>Diagram rolí</h3>
+    <img src="./diagrams/psychorelax_roles_diagram.svg" alt="role">
+
+    <h3>Diagram aktivit</h3>
+    <img src="./diagrams/activity_diagram_psychorelax.svg" alt="Funkce a aktivity">
+
+    <h3>Diagram dat</h3>
+    <img src="./diagrams/psychorelax_er_diagram.svg" alt="Data a jejich vztahy">
+
+    <h3>Diagram technologie</h3>
+    <img src="./diagrams/psychorelax_technology_diagram.svg" alt="Technologie a nasazení">
+
 </body>
 </html>

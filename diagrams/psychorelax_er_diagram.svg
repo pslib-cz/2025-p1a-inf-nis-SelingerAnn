@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700">
+<style>
+.entity{fill:white;stroke:black;stroke-width:2}
+.text{font-family:Arial;font-size:14px}
+.title{font-family:Arial;font-size:16px;font-weight:bold}
+.line{stroke:black;stroke-width:2}
+</style>
+
+<rect class="entity" x="50" y="50" width="220" height="150"/>
+<text class="title" x="120" y="75">UZIVATEL</text>
+<text class="text" x="70" y="105">id (PK)</text>
+<text class="text" x="70" y="125">jmeno</text>
+<text class="text" x="70" y="145">email</text>
+<text class="text" x="70" y="165">telefon</text>
+
+<rect class="entity" x="450" y="40" width="260" height="240"/>
+<text class="title" x="530" y="65">PSYCHOLOG</text>
+<text class="text" x="470" y="95">id (PK)</text>
+<text class="text" x="470" y="115">jmeno</text>
+<text class="text" x="470" y="135">email</text>
+<text class="text" x="470" y="155">telefon</text>
+<text class="text" x="470" y="175">kraj</text>
+<text class="text" x="470" y="195">mesto</text>
+<text class="text" x="470" y="215">zamereni</text>
+<text class="text" x="470" y="235">cekaci_doba_tydny</text>
+
+<rect class="entity" x="900" y="50" width="220" height="150"/>
+<text class="title" x="940" y="75">PRACOVNI_DOBA</text>
+<text class="text" x="920" y="105">id (PK)</text>
+<text class="text" x="920" y="125">psycholog_id (FK)</text>
+<text class="text" x="920" y="145">den_tydne</text>
+<text class="text" x="920" y="165">cas_od, cas_do</text>
+
+<rect class="entity" x="430" y="420" width="300" height="180"/>
+<text class="title" x="530" y="445">POPTAVKA</text>
+<text class="text" x="450" y="475">id (PK)</text>
+<text class="text" x="450" y="495">uzivatel_id (FK)</text>
+<text class="text" x="450" y="515">psycholog_id (FK)</text>
+<text class="text" x="450" y="535">problem_popis</text>
+<text class="text" x="450" y="555">odeslano</text>
+<text class="text" x="450" y="575">stav</text>
+
+<rect class="entity" x="900" y="420" width="220" height="120"/>
+<text class="title" x="980" y="445">ADMIN</text>
+<text class="text" x="920" y="475">id (PK)</text>
+<text class="text" x="920" y="495">jmeno</text>
+<text class="text" x="920" y="515">email</text>
+
+<line class="line" x1="270" y1="120" x2="430" y2="500"/>
+<text class="text" x="300" y="290">1:N</text>
+
+<line class="line" x1="580" y1="280" x2="580" y2="420"/>
+<text class="text" x="590" y="360">1:N</text>
+
+<line class="line" x1="710" y1="120" x2="900" y2="120"/>
+<text class="text" x="800" y="110">1:N</text>
+
+<line class="line" x1="1010" y1="420" x2="1010" y2="200"/>
+<text class="text" x="1020" y="310">1:N</text>
+</svg>
